@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/pe.css">
+    <link rel="website icon" type="webp" href="../Images/logo.webp">
+    <title>CashTrack - Pourcentage d'épargne</title>
+</head>
+<body>
+    <div class="container parent_container pourcentage_epargne">
+        <div class="container1">
+            <div class="child_container montant_container">
+                <label for="montant">Montant :</label>
+                <input type="number" name="montant" id="montant" value="">
+            </div>
+
+            <div class="child_container pourcentage_container">
+                <label for="pourcentage">Pourcentage :</label>
+                <input type="number" name="pourcentage" id="pourcentage" value="">
+            </div>
+        </div>
+
+        <div class="container2">
+            <button onclick="p_e()">Calculer</button>
+            <p>Vous pouvez mettre de côté : <span id="resultat">...</span>€</p>
+
+            <span id="erreur"></span>
+        </div>
+    </div>
+
+    <script src="../JS/pe.js"></script>
+</body>
+</html>

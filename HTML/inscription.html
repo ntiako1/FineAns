@@ -1,0 +1,24 @@
+<!-- inscription.php -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/inscription.css">
+    <link rel="website icon" type="webp" href="../Images/logo.webp">
+    <title>Inscription</title>
+</head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <h2>Inscription</h2>
+                    <form action="../PHP/inscription_traitement.php" method="post">
+                        <input placeholder="Name" type="text" id="nom" name="nom" required><br><br>
+                        <input placeholder="Email" type="email" id="email" name="email" required><br><br>
+                        <input placeholder="Password" type="password" id="mot_de_passe" name="mot_de_passe" required><br><br>
+                        <input class="button" type="submit" value="S'inscrire">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

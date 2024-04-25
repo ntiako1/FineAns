@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Gentle';
+    src: url('Fonts/Gentle/MADE\ Gentle\ PERSONAL\ USE.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF PRO';
+    src: url('Fonts/SFProText/SF-Pro-Text-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}

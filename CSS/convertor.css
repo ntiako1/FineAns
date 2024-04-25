@@ -1,0 +1,147 @@
+.FineAns {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-size: 40px;
+    font-family: Kadwa;
+
+  }
+  
+
+*, ::before, ::after {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+    /* border: 1px solid crimson; */ /* Uncomment this line for debugging purposes */
+}
+
+/* Body styling */
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(fond.jpg); /* Background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the savings percentage container */
+.savings_percentage {
+    width: 50%; /* Set width */
+    height: 40%; /* Set height */
+    gap: 10px; /* Set gap between elements */
+    background-color: #005593; /* Background color */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: space-around; /* Space evenly vertically */
+    align-items: center; /* Center horizontally */
+    transition: box-shadow 300ms ease, transform 1000ms ease; /* Add transitions */
+}
+
+/* Hover effect for the savings percentage container */
+
+
+/* Styling for the first container holding input fields */
+.container1 {
+    width: 80%; /* Set width */
+    height: max-content; /* Adjust height based on content */
+    display: flex; /* Use flexbox layout */
+    justify-content: space-around; /* Space evenly horizontally */
+}
+
+body{
+    background-color: #005593;
+}
+
+/* Styling for child containers within the first container */
+.child_container {
+    width: 100%; /* Set width */
+    height: 100%; /* Set height */
+    gap: 10px; /* Set gap between elements */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center horizontally */
+}
+
+/* Styling for labels within child containers */
+.child_container label {
+    font-size: 1.1rem; /* Set font size */
+    font-weight: 600; /* Set font weight */
+    text-decoration: underline; /* Add underline */
+}
+
+/* Styling for input fields within child containers */
+.child_container input {
+    width: 50%; /* Set width */
+    background-color: transparent; /* Transparent background */
+    color: #fff; /* Text color */
+    border: 1px solid white; /* White border */
+    border-radius: 8px; /* Rounded corners */
+    outline: none; /* Remove outline */
+}
+
+
+
+/* Styling for number input spinners */
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button { 
+    -webkit-appearance: none; /* Remove spinners for WebKit browsers */
+    margin: 0; /* Remove default margin */
+}
+
+/* Styling for number input spinners in Opera */
+input::-o-inner-spin-button, input::-o-outer-spin-button { 
+    -o-appearance: none; /* Remove spinners for Opera */
+    margin: 0; /* Remove default margin */
+}
+
+/* Styling for the second container holding button and result */
+.container2 {
+    width: 40%; /* Set width */
+    height: max-content; /* Adjust height based on content */
+    gap: 10px; /* Set gap between elements */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center horizontally */
+}
+
+/* Styling for the button */
+.container2 button {
+    width: max-content; /* Set width to fit content */
+    background-color: #fff; /* White background */
+    color: #000; /* Black text color */
+    padding: 10px; /* Add padding */
+    border: 1px solid #1c1c1c; /* Border */
+    border-radius: 8px; /* Rounded corners */
+    font-weight: 600; /* Set font weight */
+    transition: background-color 300ms ease, color 300ms ease; /* Add transitions */
+}
+
+/* Hover effect for the button */
+.container2 button:hover {
+    background-color: #1c1c1c; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    border: 1px solid white; /* Change border color on hover */
+    transition: background-color 300ms ease, color 300ms ease; /* Add transitions */
+}
+
+/* Styling for the result display paragraph */
+.container2 p {
+    font-weight: 400; /* Set font weight */
+    text-align: center; /* Center align text */
+}
+
+/* Styling for the error message */
+#error {
+    color: red; /* Red text color */
+}

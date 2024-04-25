@@ -1,0 +1,125 @@
+* {
+    box-sizing: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'SF PRO', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background-image: url(../Images/accueil_fond.webp);
+    background-size: cover; /* Pour s'assurer que l'image couvre l'ensemble de l'écran */
+    background-position: center; /* Pour centrer l'image */
+    background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
+    top: 0px;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.548);
+    height: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    font-weight: 600;
+}
+
+.logo {
+    margin: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-logo {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+}
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.calltoaction1 {
+    font-size: 30px;
+    margin-right: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.action-button {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.action-button:hover {
+    background-color: white;
+    border: solid 1px black;
+    color: black;
+    transition: 0.65s;
+}
+
+.box {
+    height: 40%;
+    background-color: rgba(245, 245, 245, 0.699);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.commencer {
+    width: 20%;
+    height: 50%;
+    margin: 20px;
+    gap: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    border: 1px solid transparent;
+}
+
+.login:hover {
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin: -10px;
+}
+
+.subscribe {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+.subscribe:hover {
+    background-color: white;
+    color: black;
+    transition: 0.65s;
+}

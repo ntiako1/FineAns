@@ -1,0 +1,23 @@
+<!-- connexion.php -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/connexion.css">
+    <link rel="website icon" type="webp" href="../Images/logo.webp">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Login</h2>
+            <form action="../PHP/connexion_traitement.php" method="post">
+                <input placeholder="Email" type="email" id="email" name="email" required><br><br>
+                <input placeholder="Password" type="password" id="mot_de_passe" name="mot_de_passe" required><br><br>
+                <input class="button" type="submit" value="Login" >
+            </form>
+        </div>    
+    </div>
+</body>
+</html>
