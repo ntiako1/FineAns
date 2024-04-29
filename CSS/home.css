@@ -1,0 +1,193 @@
+body {
+    background-image: url(../Images/accueil_fond.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =======================  */
+/* ==== Styles - nav ===== */
+/* ======================= */
+nav {
+    position: fixed;
+    width: var(--nav-width);
+    height: var(--nav-height);
+    top: 0;
+
+    background-color: var(--nav-color);
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+}
+
+nav .brand {
+    width: var(--brand-width);
+    height: var(--brand-height);
+
+    padding-left: var(--brand-padding);
+
+    display: flex;
+    align-items: center;
+}
+
+.brand h1 {
+    font-size: var(--brand-h1-size);
+}
+
+nav .buttons {
+    width: var(--buttons_width);
+    height: var(--buttons-height);
+
+    padding-right: var(--buttons-padding);
+    column-gap: var(--buttons-gap);
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.buttons a {
+    color: var(--buttons-color);
+    font-weight: var(--font-weigth-600);
+    border-radius: var(--radius-8);
+    padding: var(--buttons-a-padding);
+    cursor: var(--cursor-pointer);
+}
+
+.buttons .signIn {
+    border: 1px solid transparent;
+    transition:
+    background-color 500ms ease,
+    color 500ms ease,
+    border 500ms ease;
+}
+
+.buttons .signIn:hover {
+    border: 1px solid black;
+    transition:
+    background-color 500ms ease,
+    color 500ms ease,
+    border 500ms ease;
+}
+
+.buttons .signUp {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+
+    transition:
+    background-color 500ms ease,
+    color 500ms ease,
+    border 500ms ease;
+}
+
+.buttons .signUp:hover {
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+
+    transition:
+    background-color 500ms ease,
+    color 500ms ease,
+    border 500ms ease;
+}
+
+/* ============================  */
+/* ==== Styles - box_home ===== */
+/* ============================ */
+.box_home {
+    position: var(--boxh-position);
+    width: var(--boxh-width);
+    height: var(--boxh-height);
+
+    background-color: var(--boxh-color);
+    border: var(--boxh-border);
+    border-radius: var(--radius-8);
+    padding: var(--boxh-padding);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ============================  */
+/* ===== Styles - home ======= */
+/* ============================ */
+.box_home .home {
+    width: var(--home-height);
+    height: var(--home-height);
+}
+
+.box_home .home h2 {
+    font-size: var(--home-h2-size);
+    font-weight: var(--font-weight-900);
+    margin-bottom: var(--home-h2-margin);
+}
+
+.box_home .home h3 {
+    font-weight: 300;
+}
+
+
+/* ============================  */
+/* ===== Styles - signUp2 ====== */
+/* ============================ */
+.box_home .signUp2 {
+    position: var(--signUp2-position);
+    width: var(--signUp2-width);
+    height: var(--signUp2-height);
+    right: var(--signUp2-right);
+    bottom: var(--signUp2-bottom);
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.signUp2 a {
+    border: var(--signUp2-a-border);
+    border-radius: var(--radius-12);
+    background-color: var(--signUp2-a-color);
+    font-weight: var(--font-weigth-600);
+    color: var(--signUp2-a-color2);
+    padding: var(--signUp2-a-padding);
+
+    transition:
+    background-color 500ms ease,
+    color 500ms ease,
+    border 500ms ease;
+}
+
+.signUp2 a:hover {
+    background-color: var(--signUp2-a-hover-color);
+    color: var(--signUp2-a-hover-color2);
+    border: var(--signUp2-a-hover-border);
+
+    transition:
+    background-color 500ms ease,
+    color 500ms ease,
+    border 500ms ease;
+}
+
+
+
+
+
+@media screen and (min-width: 568px) {
+    .buttons a {
+        padding: calc(var(--buttons-a-padding) / 2);
+    }
+
+    .box_home .home h2 {
+        font-size: calc(var(--home-h2-size) * 1.3);
+        margin-bottom: calc(var(--home-h2-margin) / 2);
+    }
+}

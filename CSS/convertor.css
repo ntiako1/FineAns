@@ -6,20 +6,6 @@
     font-family: Kadwa;
 
   }
-  
-
-*, ::before, ::after {
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: Roboto, sans-serif;
-    color: #fff;
-    /* border: 1px solid crimson; */ /* Uncomment this line for debugging purposes */
-}
 
 /* Body styling */
 body {

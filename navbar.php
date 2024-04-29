@@ -1,4 +1,6 @@
 <head>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/variables.css">
     <link rel="stylesheet" href="CSS/navbar.css">
 </head>
 <div class="container_navbar">

@@ -1,0 +1,185 @@
+body {
+    position: relative;
+    background-color: var(--body-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    top: 0;
+
+    background-color: var(--nav-color);
+
+    display: flex;
+    align-items: center;
+}
+
+.brand {
+    width: var(--brand-width);
+    height: var(--brand-height);
+
+    padding-left: var(--brand-padding);
+
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    width: var(--buttons_width);
+    height: var(--buttons-height);
+
+    padding-right: var(--buttons-padding);
+    column-gap: var(--buttons-gap);
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.buttons a {
+    color: var(--buttons-color);
+    font-weight: var(--font-weigth-600);
+    border-radius: var(--radius);
+    padding: 1%;
+    cursor: pointer;
+}
+
+/* Box Form */
+.box_signUp {
+    width: var(--boxi-width);
+    height: var(--boxi-height);
+
+    background-color: var(--boxi-color);
+    border: none;
+    border-radius: var(--radius);
+    padding: var(--boxi-padding);
+
+}
+
+.box_signUp h2 {
+    text-align: center;
+    font-size: var(--inscription-title2);
+}
+
+.box_signUp .ligne {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_signUp .ligne hr {
+    width: var(--hr-width);
+    margin: var(--hr-margin);
+}
+
+
+/* Form */
+.box_signUp form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box_signUp input {
+    width: var(--input-width);
+
+    text-align: center;
+    background-color: var(input-color);
+    border: var(--input-border);
+    border-radius: var(--radius);
+    padding: var(--input-padding);
+    cursor: text;
+}
+
+.box_signUp input[name="email"] {
+    margin: var(--input-margin);
+}
+
+
+/* Already Registered */
+.box_signUp .connect {
+    margin: var(--connect-margin);
+}
+
+.box_signUp .connect a {
+    font-weight: var(font-weigth-300);
+    cursor: pointer;
+}
+
+.box_signUp .connect a:hover {
+    text-decoration: underline;
+}
+
+
+/* Submit */
+.box_signUp .submit {
+    background-color: var(--submit-color);
+    border: var(--submit-border);
+    padding: var(--submit-padding);
+    cursor: pointer;
+
+    transition: background-color 500ms ease;
+}
+
+.box_signUp .submit:hover {
+    background-color: var(--submit-hover-color);
+    transition: background-color 500ms ease;
+}
+
+
+
+
+
+
+
+
+
+/* ========== Phone - Tablet version ========== */
+@media screen and (min-width: 568px) {
+    .box_signUp {
+        width: calc(var(--boxi-width) - 10%);
+        height: calc(var(--boxi-height) - 10%);
+    }
+
+    .box_signUp h2 {
+        font-size: calc(var(--inscription-title2) - 1rem);
+    }
+
+    .box_signUp input {
+        padding: calc(var(--input-padding) / 2);
+    }
+
+    .box_signUp input[name="email"] {
+        margin: 2.5% 0;
+    }
+
+    .box_signUp .connect {
+        margin: 5% 0;
+    }
+
+    .box_signUp .submit {
+        padding: calc(var(--submit-padding) / 2);
+    }
+}
+
+/* ========== Tablet - Computer version ========== */
+@media screen and (min-width: 768px) {
+    .box_signUp {
+        height: calc(var(--boxi-height) + 5%);
+        padding: calc(var(--boxi-padding) / 3);
+    }
+}
+
+/* ========== Tablet - Computer version ========== */
+@media screen and (min-width: 1200px) {
+    .box_signUp {
+        width: calc(var(--boxi-width) / 2);
+        padding: calc(var(--boxi-padding) / 2);
+    }
+}

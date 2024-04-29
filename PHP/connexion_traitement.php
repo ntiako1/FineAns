@@ -16,26 +16,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows > 0) {
         $utilisateur = $result->fetch_assoc();
-        
+
         // Vérification du mot de passe hashé
         if (password_verify($mot_de_passe, $utilisateur['mot_de_passe'])) {
             // Mot de passe correct, authentification réussie
             // L'utilisateur est authentifié avec succès, créer une session et rediriger vers la page d'accueil
- 
+
             // Enregistrer le nom d'utilisateur dans la session
             $_SESSION['nom_utilisateur'] = $utilisateur['nom'];
             // Vous pouvez rediriger vers une page d'accueil par exemple
-            header("Location: ../../../index.php");
+            header("Location: ../index.php");
             exit();
         } else {
             // Mot de passe incorrect
-            echo "Identifiants invalides";
+            $erreur = "Identifiants invalides";
+            header("Location: ../HTML/connexion.html?erreur=" . urlencode($erreur));
+            exit();
         }
+
     } else {
         // L'utilisateur n'existe pas
         echo "Identifiants invalides";
     }
-    
+
     $mysqli->close();
 }
 ?>

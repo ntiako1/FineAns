@@ -1,0 +1,165 @@
+/* ================= */
+/* ==== Colors ===== */
+/* ================= */
+:root {
+    --black: #000;
+        /* SignIn Variables */
+    --body-color: #3d91f4;
+    --nav-color: #f5f5f590;
+    --buttons-a-colors: #000;
+    --boxi-color: #d9d9d9;
+    --box_inputs-input-color: #c8c4c4;
+    --box_inputs-input-color2: #000;
+    --box_input-input-placeholder-color: #000;
+    --passwAcc-a-color: #3d91f4;
+    --submit-border: 1px solid #c8c4c4;
+    --submit-color: #b3abab;
+    --sumbit_hover-color: #fff;
+    --sumbit_hover-color2: #3d91f4;
+
+        /* SignUp Variables */
+    --boxh-color: #c9ddf0;
+    --signUp2-a-color: #000;
+    --signUp2-a-color2: #fff;
+    --signUp2-a-hover-color: #fff;
+    --signUp2-a-hover-color2: #000;
+}
+
+/* ================= */
+/* ===== Fonts ===== */
+/* ================= */
+:root {
+    --font-weight-900: 900;
+    --font-weight-600: 600;
+    --font-weight-500: 500;
+    --font-weight-300: 300;
+}
+
+/* ================= */
+/* ===== Sizes ===== */
+/* ================= */
+:root {
+        /* SignIn Variables */
+    --submit-size: 1.5rem;
+    --brand-h1-size: 1.5rem;
+
+        /* SingUp Variables */
+    --home-h2-size: 1.5rem;
+}
+
+/* ================= */
+/* ===== Width ===== */
+/* ================= */
+:root {
+        /* SignIn Variables */
+    --nav-width: 100%;
+    --brand-width: 20%;
+    --buttons_width: 80%;
+    --boxi-width: 80%;
+    --boxi-hr-width: 50%;
+    --form-width: 100%;
+    --box_inputs-width: 90%;
+    --box_inputs-input-width: 100%;
+    --passwAcc-width: 100%;
+    --submit-login-width: 70%;
+
+        /* SignUp Variables */
+    --boxh-width: 90%;
+    --home-width: 100%;
+    --signUp2-width: 70%;
+}
+
+/* ================= */
+/* ==== Height ===== */
+/* ================= */
+:root {
+        /* SignIn Variables */
+    --nav-height: 10%;
+    --brand-height: 80%;
+    --buttons-height: 80%;
+    --boxi-height: 50%;
+    --form-height: 100%;
+    --box_inputs-height: 30%;
+    --box_inputs-input-height: 40%;
+    --passwAcc-height: 20%;
+    --submit-login-height: 15%;
+
+        /* SignUp Variables */
+    --boxh-height: 40%;
+    --home-height: 80%;
+    --signUp2-height: 20%;
+}
+
+/* ================= */
+/* ==== Margin ===== */
+/* ================= */
+:root {
+        /* SignIn Variables */
+    --brand-left-padding: 2%;
+    --boxi-padding: 10%;
+    --passwAcc-margin: 5% 0;
+    --boxi-hr-margin: 10% 0;
+
+        /* SignUp Variables */
+    --home-h2-margin: 10%;
+}
+
+/* ================= */
+/* ==== Padding ==== */
+/* ================= */
+:root {
+        /* SignIn Variables */
+    --buttons-padding: 2%;
+    --boxi-padding: 10%;
+    --buttons-a-padding: 5%;
+
+        /* SignUp Variables */
+    --boxh-padding: 5%;
+    --signUp2-a-padding: 5%;
+}
+
+/* ================= */
+/* ==== Border ===== */
+/* ================= */
+:root {
+        /* SignIn Variables */
+    --boxi-border: none;
+
+        /* SignUp Variables */
+    --boxh-boder: none;
+    --signUp2-a-border: 1px solid #000;
+    --signUp2-a-hover-border: 1px solid #fff;
+}
+
+/*  */
+/*  */
+/*  */
+:root {
+        /* SignIn Variables */
+    --buttons-gap: 5%;
+    --box_inputs-gap: 10%;
+}
+
+/* ================= */
+/* ===== Ohter ===== */
+/* ================= */
+:root {
+        /* SignIn Variables */
+    --radius-8: 8px;
+    --radius-12: 12px;
+    --boxi-box-shadow: 5px 5px 20px #000;
+    --boxi-h2: 3rem;
+    --buttons-a-scale: scale(1.1);
+    --passwAcc-columns: 1fr 2fr;
+    --text-align-center: center;
+    --text-align-left: left;
+    --text-align-right: right;
+    --cursor-pointer: pointer;
+    --cursor-text: text;
+
+        /* SignUp Variables */
+    --boxh-position: relative;
+    --signUp2-position: absolute;
+    --signUp2-right: 5%;
+    --signUp2-bottom: 2%;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/signUp.css">
+    <link rel="stylesheet" href="../CSS/variables.css">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="website icon" type="webp" href="../Images/logo F.webp">
+    <title>Register - FineAns</title>
+</head>
+    <body>
+        <nav>
+           <div class="nav_left brand">
+               <h1>FineAns</h1>
+           </div>
+           <div class="buttons">
+               <a class="home" href="../index.html">Home</a>
+               <a class="support" href="../HTML/support.html">Support</a>
+            </div>
+        </nav>
+
+        <div class="box_signUp">
+            <h2>Register</h2>
+            <div class="ligne">
+                <hr/>
+            </div>
+            <form action="../PHP/inscription_traitement.php" method="post">
+                <input placeholder="Name" type="text" id="nom" name="nom" required>
+                <input placeholder="Email" type="email" id="email" name="email" required>
+                <input placeholder="Password" type="password" id="mot_de_passe" name="mot_de_passe" required>
+                <div class="connect">
+                    <a href="./connexion.html">Already registered ?</a>
+                </div>
+                <input class="submit" type="submit" value="Register">
+            </form>
+        </div>
+    </body>
+</html>
