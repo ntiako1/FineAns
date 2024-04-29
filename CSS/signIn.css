@@ -6,7 +6,6 @@ body {
     justify-content: center;
 }
 
-/* Navbar */
 nav {
     position: fixed;
     width: var(--nav-width);
@@ -24,7 +23,7 @@ nav {
     width: var(--brand-width);
     height: var(--brand-height);
 
-    padding-left: var(--brand-padding);
+    padding-left: var(--brand-left-padding);
 
     display: flex;
     align-items: center;
@@ -48,7 +47,7 @@ nav {
 
 .buttons a {
     color: var(--buttons-color);
-    font-weight: var(--font-weigth-600);
+    font-weight: var(--font-weight-600);
     border-radius: var(--radius-8);
     padding: var(--buttons-a-padding);
     cursor: var(--cursor-pointer);
@@ -74,7 +73,7 @@ nav {
 }
 
 .box_signIn h2 {
-    font-size: var(--boxi-h2);
+    font-size: var(--boxi-h2-size);
     font-weight: var(--font-weight-900);
     text-align: var(--text-align-center);
 }
@@ -91,7 +90,7 @@ nav {
 }
 
 .box_signIn form {
-    width: var(--form-widths);
+    width: var(--form-width);
     height: var(--form-height);
 
     display: flex;
@@ -114,6 +113,7 @@ form .box_inputs input {
     width: var(--box_inputs-input-width);
     height: var(--box_inputs-input-height);
 
+    text-align: var(--text-align-center);
     color: var(--box_inputs-input-color2);
     background-color: var(--box_inputs-input-color);
     border: var(--box_inputs-input-border);
@@ -123,7 +123,6 @@ form .box_inputs input {
 
 form .box_inputs input::placeholder {
     text-align: var(--text-align-center);
-    color: var(--box_input-input-placeholder-color);
 }
 
 form .box_inputs input:focus {
@@ -171,10 +170,6 @@ form .submit-login:hover {
     color: var(--sumbit_hover-color);
 }
 
-
-
-
-
 @media screen and (min-width: 568px) {
     .brand h1 {
         font-size: calc(var(--brand-h1-size) * 1.3);
@@ -218,6 +213,10 @@ form .submit-login:hover {
         margin: 2%;
     }
 
+    form .box_inputs {
+        height: calc(var(--box_inputs-height) + 10%);
+    }
+
     form .box_inputs input {
         width: calc(var(--box_inputs-input-width) - 40%);
     }
@@ -228,5 +227,6 @@ form .submit-login:hover {
 
     form .submit-login {
         width: calc(var(--submit-login-width) - 35%);
+        height: calc(var(--submit-login-height) * 1.3);
     }
 }

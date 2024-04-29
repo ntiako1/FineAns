@@ -1,5 +1,4 @@
 body {
-    position: relative;
     background-color: var(--body-color);
 
     display: flex;
@@ -7,14 +6,14 @@ body {
     justify-content: center;
 }
 
-/* Navbar */
 nav {
     position: fixed;
-    width: 100%;
-    height: 10%;
+    width: var(--nav-width);
+    height: var(--nav-height);
     top: 0;
 
     background-color: var(--nav-color);
+    overflow: hidden;
 
     display: flex;
     align-items: center;
@@ -24,10 +23,14 @@ nav {
     width: var(--brand-width);
     height: var(--brand-height);
 
-    padding-left: var(--brand-padding);
+    padding-left: var(--brand-left-padding);
 
     display: flex;
     align-items: center;
+}
+
+.brand h1 {
+    font-size: var(--brand-h1-size);
 }
 
 .buttons {
@@ -44,27 +47,35 @@ nav {
 
 .buttons a {
     color: var(--buttons-color);
-    font-weight: var(--font-weigth-600);
-    border-radius: var(--radius);
-    padding: 1%;
-    cursor: pointer;
+    font-weight: var(--font-weight-600);
+    border-radius: var(--radius-8);
+    padding: var(--buttons-a-padding);
+    cursor: var(--cursor-pointer);
+
+    transition: transform 300ms ease;
 }
 
-/* Box Form */
+.buttons a:hover {
+    transform: var(--buttons-a-scale);
+    transition: transform 300ms ease;
+}
+
 .box_signUp {
     width: var(--boxi-width);
     height: var(--boxi-height);
 
     background-color: var(--boxi-color);
-    border: none;
-    border-radius: var(--radius);
     padding: var(--boxi-padding);
-
+    border: var(--boxi-border);
+    border-radius: var(--radius-8);
+    box-shadow: var(--boxi-box-shadow);
+    overflow: hidden;
 }
 
 .box_signUp h2 {
-    text-align: center;
-    font-size: var(--inscription-title2);
+    font-size: var(--boxi-h2);
+    font-weight: var(--font-weight-900);
+    text-align: var(--text-align-center);
 }
 
 .box_signUp .ligne {
@@ -74,112 +85,136 @@ nav {
 }
 
 .box_signUp .ligne hr {
-    width: var(--hr-width);
-    margin: var(--hr-margin);
+    width: var(--boxi-hr-width);
+    margin: var(--boxi-hr-margin);
 }
 
-
-/* Form */
 .box_signUp form {
+    width: var(--form-width);
+    height: var(--form-height);
+
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.box_signUp input {
-    width: var(--input-width);
+form .box_inputs {
+    width: var(--box_inputs-width);
+    height: var(--box_inputs-height);
 
-    text-align: center;
-    background-color: var(input-color);
-    border: var(--input-border);
-    border-radius: var(--radius);
-    padding: var(--input-padding);
-    cursor: text;
+    gap: var(--box_inputs-gap);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.box_signUp input[name="email"] {
-    margin: var(--input-margin);
+form .box_inputs input {
+    width: var(--box_inputs-input-width);
+    height: var(--box_inputs-input-height);
+
+    text-align: var(--text-align-center);
+    color: var(--box_inputs-input-color2);
+    background-color: var(--box_inputs-input-color);
+    border: var(--box_inputs-input-border);
+    border-radius: var(--radius-8);
+    cursor: var(--cursor-text);
 }
 
-
-/* Already Registered */
-.box_signUp .connect {
-    margin: var(--connect-margin);
+form .box_inputs input::placeholder {
+    text-align: var(--text-align-center);
 }
 
-.box_signUp .connect a {
-    font-weight: var(font-weigth-300);
-    cursor: pointer;
+form .box_inputs input:focus {
+    outline: none;
 }
 
-.box_signUp .connect a:hover {
-    text-decoration: underline;
+form .connect {
+    width: var(--passwAcc-margin);
+    height: var(--passwAcc-height);
+
+    margin: var(--passwAcc-margin);
 }
 
+form .connect a:hover {
+    color: var(--signUp-passwAcc-a-color);
+    cursor: var(--cursor-pointer);
+}
 
-/* Submit */
-.box_signUp .submit {
+form .submit-register {
+    width: var(--submit-login-width);
+    height: var(--submit-login-height);
+
     background-color: var(--submit-color);
+    font-size: var(--submit-size);
+    font-weight: var(--font-weight-500);
     border: var(--submit-border);
-    padding: var(--submit-padding);
-    cursor: pointer;
-
-    transition: background-color 500ms ease;
+    border-radius: var(--radius-8);
+    cursor: var(--cursor-pointer);
 }
 
-.box_signUp .submit:hover {
-    background-color: var(--submit-hover-color);
-    transition: background-color 500ms ease;
+form .submit-register:hover {
+    background-color: var(--sumbit_hover-color2);
+    color: var(--sumbit_hover-color);
 }
 
-
-
-
-
-
-
-
-
-/* ========== Phone - Tablet version ========== */
 @media screen and (min-width: 568px) {
-    .box_signUp {
-        width: calc(var(--boxi-width) - 10%);
-        height: calc(var(--boxi-height) - 10%);
+    .brand h1 {
+        font-size: calc(var(--brand-h1-size) * 1.3);
     }
 
-    .box_signUp h2 {
-        font-size: calc(var(--inscription-title2) - 1rem);
+    .buttons a {
+        font-size: 1.5rem;
     }
 
-    .box_signUp input {
-        padding: calc(var(--input-padding) / 2);
+    .box_signUp .ligne hr {
+        margin: 5%;
     }
 
-    .box_signUp input[name="email"] {
-        margin: 2.5% 0;
-    }
-
-    .box_signUp .connect {
-        margin: 5% 0;
-    }
-
-    .box_signUp .submit {
-        padding: calc(var(--submit-padding) / 2);
+    form .box_inputs input  {
+        width: calc(var(--box_inputs-input-width) - 10%);
     }
 }
 
-/* ========== Tablet - Computer version ========== */
 @media screen and (min-width: 768px) {
-    .box_signUp {
-        height: calc(var(--boxi-height) + 5%);
-        padding: calc(var(--boxi-padding) / 3);
+    form .box_inputs input {
+        width: calc(var(--box_inputs-input-width) - 20%);
+    }
+
+    form .connect {
+        margin: 3%;
+    }
+
+    form .submit-register {
+        width: calc(var(--submit-login-width) - 20%);
     }
 }
 
-/* ========== Tablet - Computer version ========== */
 @media screen and (min-width: 1200px) {
     .box_signUp {
-        width: calc(var(--boxi-width) / 2);
-        padding: calc(var(--boxi-padding) / 2);
+        width: calc(var(--boxi-width) - 35%);
+        padding: calc(var(--boxi-padding) - 5%);
+    }
+
+    .box_signUp .ligne hr {
+        width: calc(var(--boxi-hr-width) - 20%);
+        margin: 2%;
+    }
+
+    form .box_inputs {
+        height: calc(var(--box_inputs-height) + 10%);
+    }
+
+    form .box_inputs input {
+        width: calc(var(--box_inputs-input-width) - 40%);
+    }
+
+    form .connect {
+        margin: 1%;
+    }
+
+    form .submit-register {
+        width: calc(var(--submit-login-width) - 35%);
+        height: calc(var(--submit-login-height) * 1.3);
     }
 }
