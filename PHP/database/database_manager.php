@@ -18,9 +18,9 @@ class DatabaseManager {
     }
 
     public function getUserByMail(string $mail): User|null{
-        $result = $this->executeQuery("SELECT * FROM utilisateurs WHERE email='{$mail}'");
+        $result = $this->executeQuery("SELECT * FROM users WHERE mail='{$mail}'");
         if($result === null){return null;}
-        if(mysqli_num_rows($result) === 0 || $result === false){
+        if($result === false || mysqli_num_rows($result) === 0){
             return null;
         }
         $user = mysqli_fetch_array($result);
@@ -82,7 +82,7 @@ class DatabaseManager {
     }
 
     private function executeQuery(string $query): null|bool|mysqli_result {
-        if($this->database === false){return null;}
+        if($this->database === null){return null;}
         return mysqli_query($this->database, $query);
     }
 }
