@@ -1,4 +1,0 @@
-@font-face {
-    font-family: 'Jura';
-    src: url("../Fonts/Jura/Jura-VariableFont_wght.ttf");
-}
